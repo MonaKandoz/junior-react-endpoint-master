@@ -4,6 +4,8 @@ import typeDefs from './schema';
 import resolvers from './resolvers';
 
 const server = new ApolloServer({
+    introspection: true,
+    playground: true,
     typeDefs: typeDefs,
     resolvers: resolvers
 });
